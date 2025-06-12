@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="HDI_ORDA_Events_Part_1" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+<base name="HDI_ORDA_constructor" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="INFO" uuid="107A367EBCC346259FD971E8FC1097DA" id="1">
 		<field name="ID" uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" type="4" unique="true" autosequence="true" not_null="true" id="1">
@@ -26,11 +26,9 @@
 	<table name="Products" uuid="0196CED8FB6276498730C34B6B2F4FC6" id="2">
 		<field name="ID" uuid="0196CED8FB637B89B95E89069AF04AB5" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="name" uuid="0196CED923E37B58958B27D51FB15D94" type="10" limiting_length="255" never_null="true" id="2"/>
-		<field name="creationDate" uuid="0196CED942897DB2A38AAAEFD2C00F23" type="8" never_null="true" id="3"/>
+		<field name="stamp" uuid="0196CED942897DB2A38AAAEFD2C00F23" type="10" limiting_length="255" never_null="true" id="3"/>
 		<field name="comment" uuid="0196CED9689F75CA8DC4677C3CD19E63" type="10" limiting_length="255" never_null="true" id="4"/>
 		<field name="price" uuid="0196CED979357FCEB8C3AD332BEE9316" type="6" never_null="true" id="5"/>
-		<field name="inStock" uuid="0196D8DCE7A473B69AAB5B2C7164F8D6" type="3" never_null="true" id="6"/>
-		<field name="allowWrapSeparately" uuid="0196E8AE8C51753B93EDBDD822B89EB3" type="1" never_null="true" id="7"/>
 		<primary_key field_name="ID" field_uuid="0196CED8FB637B89B95E89069AF04AB5"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="7">
@@ -53,20 +51,20 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="MailLabel" uuid="0196D4951F867CD9A2B77A1552558D21" id="4">
+	<table name="(MailLabel)" uuid="0196D4951F867CD9A2B77A1552558D21" id="4" hide_in_REST="true">
 		<field name="ID" uuid="0196D4951F887E9FBE089498F19A0C75" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="line1" uuid="0196D4996A5079919751AA0827428A06" type="10" limiting_length="255" never_null="true" id="2"/>
 		<field name="line2" uuid="0196D499ABA5798188F2F44E936849EB" type="10" limiting_length="255" never_null="true" id="3"/>
 		<field name="line3" uuid="0196D499DBBA73AEA39B4CF36DB89E74" type="10" limiting_length="255" never_null="true" id="4"/>
 		<primary_key field_name="ID" field_uuid="0196D4951F887E9FBE089498F19A0C75"/>
-		<table_extra>
+		<table_extra trashed="true">
 			<editor_table_info displayable_fields_count="4">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="593.23046875" top="270.5234375" width="112.4140625" height="128.328125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="People" uuid="0196D49AB7957DA5B03DA1389C3DE363" id="5">
+	<table name="(People)" uuid="0196D49AB7957DA5B03DA1389C3DE363" id="5" hide_in_REST="true">
 		<field name="ID" uuid="0196D49AB7977D74A78DAB80BB9807DC" type="4" unique="true" autosequence="true" not_null="true" id="1">
 			<field_extra position="1"/>
 		</field>
@@ -95,21 +93,21 @@
 			<field_extra position="8"/>
 		</field>
 		<primary_key field_name="ID" field_uuid="0196D49AB7977D74A78DAB80BB9807DC"/>
-		<table_extra>
+		<table_extra trashed="true">
 			<editor_table_info fields_ordering="2" displayable_fields_count="9">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="229.6640625" top="278.234375" width="300.11328125" height="233.19140625"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="OrderLine" uuid="0196D8B21B21750E9F207D59EE17FCBF" id="6">
+	<table name="(OrderLine)" uuid="0196D8B21B21750E9F207D59EE17FCBF" id="6" hide_in_REST="true">
 		<field name="ID" uuid="0196D8B21B22772FAC46DFF0E634BB11" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="quantity" uuid="0196D8B25E4C7D4397D026690965AA5E" type="3" never_null="true" id="2"/>
 		<field name="productID" uuid="0196D8B3BE95749BAC1C9118AF69E7A6" type="4" never_null="true" id="3"/>
 		<field name="info" uuid="0196D8E2BFD273EB9851F2A8BEF390D4" type="10" limiting_length="255" never_null="true" id="4"/>
 		<field name="wrapSeparately" uuid="0196E8B54B1E74A786EB28E35E9CDCE8" type="1" never_null="true" id="5"/>
 		<primary_key field_name="ID" field_uuid="0196D8B21B22772FAC46DFF0E634BB11"/>
-		<table_extra>
+		<table_extra trashed="true">
 			<editor_table_info displayable_fields_count="5">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="620.37890625" top="13.9921875" width="278.41015625" height="152.19921875"/>
@@ -138,40 +136,6 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<relation uuid="0196D86E43B778EDA686603219936411" name_Nto1="mailLabel" name_1toN="people" state="1">
-		<related_field kind="source">
-			<field_ref uuid="0196D86E0C9576F59974B50AF6DAAA72" name="mailLabelID">
-				<table_ref uuid="0196D49AB7957DA5B03DA1389C3DE363" name="People"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="0196D4951F887E9FBE089498F19A0C75" name="ID">
-				<table_ref uuid="0196D4951F867CD9A2B77A1552558D21" name="MailLabel"/>
-			</field_ref>
-		</related_field>
-		<relation_extra>
-			<editor_relation_info>
-				<color red="255" green="255" blue="255" alpha="0"/>
-			</editor_relation_info>
-		</relation_extra>
-	</relation>
-	<relation uuid="0196D8B3F1E87F3B8DE4FBEAE8F17A57" name_Nto1="product" name_1toN="orderLines" state="1">
-		<related_field kind="source">
-			<field_ref uuid="0196D8B3BE95749BAC1C9118AF69E7A6" name="productID">
-				<table_ref uuid="0196D8B21B21750E9F207D59EE17FCBF" name="OrderLine"/>
-			</field_ref>
-		</related_field>
-		<related_field kind="destination">
-			<field_ref uuid="0196CED8FB637B89B95E89069AF04AB5" name="ID">
-				<table_ref uuid="0196CED8FB6276498730C34B6B2F4FC6" name="Products"/>
-			</field_ref>
-		</related_field>
-		<relation_extra>
-			<editor_relation_info>
-				<color red="255" green="255" blue="255" alpha="0"/>
-			</editor_relation_info>
-		</relation_extra>
-	</relation>
 	<index kind="regular" unique_keys="true" uuid="0196CED8FB637F069890B1AE0FECA372" type="7">
 		<field_ref uuid="0196CED8FB637B89B95E89069AF04AB5" name="ID">
 			<table_ref uuid="0196CED8FB6276498730C34B6B2F4FC6" name="Products"/>
@@ -184,17 +148,17 @@
 	</index>
 	<index kind="regular" unique_keys="true" uuid="0196D4951F89714FA0807668E9F9E179" type="7">
 		<field_ref uuid="0196D4951F887E9FBE089498F19A0C75" name="ID">
-			<table_ref uuid="0196D4951F867CD9A2B77A1552558D21" name="MailLabel"/>
+			<table_ref uuid="0196D4951F867CD9A2B77A1552558D21" name="(MailLabel)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="0196D49AB798709B9CFB3B6ECB87B92A" type="7">
 		<field_ref uuid="0196D49AB7977D74A78DAB80BB9807DC" name="ID">
-			<table_ref uuid="0196D49AB7957DA5B03DA1389C3DE363" name="People"/>
+			<table_ref uuid="0196D49AB7957DA5B03DA1389C3DE363" name="(People)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="0196D8B21B2279CEB93311E1910ED0B6" type="7">
 		<field_ref uuid="0196D8B21B22772FAC46DFF0E634BB11" name="ID">
-			<table_ref uuid="0196D8B21B21750E9F207D59EE17FCBF" name="OrderLine"/>
+			<table_ref uuid="0196D8B21B21750E9F207D59EE17FCBF" name="(OrderLine)"/>
 		</field_ref>
 	</index>
 	<index kind="regular" unique_keys="true" uuid="0196FC8878F37F858FC7FD0F8B075307" type="7">

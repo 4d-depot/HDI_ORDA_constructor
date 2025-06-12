@@ -6,14 +6,6 @@ Case of
 		
 		Form:C1466.products:=ds:C1482.Products.all().copy()
 		
-		Form:C1466.people:=ds:C1482.People.all().first()
-		
-		Form:C1466.productNames:={values: ds:C1482.Products.all().orderBy("ID").name}
-		
-		Form:C1466.quantities:={values: [1; 2; 3; 4]}
-		
-		Form:C1466.orderLines:=ds:C1482.OrderLine.all()
-		
 		Form:C1466.authentified:=False:C215
 		
 		Form:C1466.url:="http://127.0.0.1/rest/Products"
@@ -22,11 +14,6 @@ Case of
 		
 		Form:C1466.body2:={name: "Green pack"; price: 99; comment: "New green pack product"}
 		
-		Form:C1466.meta:=New object:C1471("fill"; "#ffcccc")
-		
-		Use (Storage:C1525)
-			Storage:C1525.logs:=New shared collection:C1527()
-		End use 
 		
 		manageTexts
 		
@@ -36,9 +23,6 @@ Case of
 		OBJECT SET VISIBLE:C603(*; "NewProduct@"; False:C215)
 		
 		OBJECT SET VISIBLE:C603(*; "SaveButton"; False:C215)
-		
-		clearLogs
-		
 		
 		manageTexts
 		

@@ -46,7 +46,7 @@
 			"objects": {
 				"information": {
 					"type": "input",
-					"top": 80,
+					"top": 110,
 					"left": 50,
 					"width": 1000,
 					"height": 550,
@@ -141,17 +141,18 @@
 						},
 						{
 							"header": {
-								"text": "Creation date",
+								"text": "Stamp",
 								"name": "Header1"
 							},
 							"name": "Column1",
 							"footer": {
 								"name": "Footer1"
 							},
-							"dataSource": "This:C1470.creationDate",
+							"dataSource": "This:C1470.stamp",
 							"enterable": false,
 							"dataSourceTypeHint": "date",
-							"textAlign": "center"
+							"textAlign": "center",
+							"width": 220
 						},
 						{
 							"header": {
@@ -164,7 +165,7 @@
 							},
 							"dataSource": "This:C1470.comment",
 							"enterable": false,
-							"width": 500
+							"width": 400
 						}
 					]
 				},
@@ -185,9 +186,9 @@
 					"type": "input",
 					"left": 170,
 					"top": 620,
-					"width": 179,
+					"width": 200,
 					"height": 20,
-					"dataSource": "Form:C1466.product.creationDate",
+					"dataSource": "Form:C1466.product.stamp",
 					"enterable": false,
 					"fill": "#F0F0F5",
 					"dataSourceTypeHint": "date",
@@ -256,7 +257,7 @@
 				},
 				"NewProductLabel2": {
 					"type": "text",
-					"text": "Creation date",
+					"text": "Stamp",
 					"top": 620,
 					"left": 60,
 					"width": 100,
@@ -328,7 +329,7 @@
 					"left": 430,
 					"top": 480,
 					"width": 540,
-					"height": 140,
+					"height": 100,
 					"dataSource": "LinesCode{1}",
 					"enterable": false,
 					"focusable": false,
@@ -364,8 +365,8 @@
 			"objects": {
 				"Button8": {
 					"type": "button",
-					"text": "Run URL",
-					"top": 560,
+					"text": "POST",
+					"top": 580,
 					"left": 220,
 					"width": 100,
 					"height": 20,
@@ -379,8 +380,8 @@
 				},
 				"Input7": {
 					"type": "input",
-					"left": 120,
-					"top": 410,
+					"left": 150,
+					"top": 430,
 					"width": 360,
 					"height": 20,
 					"dataSource": "Form:C1466.url",
@@ -397,8 +398,8 @@
 				},
 				"Text24": {
 					"type": "text",
-					"text": "URL:",
-					"top": 410,
+					"text": "Request:",
+					"top": 430,
 					"left": 70,
 					"width": 80,
 					"height": 20,
@@ -412,45 +413,17 @@
 				"Input1": {
 					"type": "input",
 					"left": 70,
-					"top": 480,
+					"top": 500,
 					"width": 250,
 					"height": 70,
 					"dataSource": "Form:C1466.body1",
 					"dataSourceTypeHint": "object",
 					"enterable": true
 				},
-				"Input6": {
-					"type": "input",
-					"left": 690,
-					"top": 470,
-					"width": 380,
-					"height": 300,
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "dotted",
-					"dataSource": "Form:C1466.response",
-					"styledText": true,
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"Text25": {
-					"type": "text",
-					"text": "Response",
-					"top": 440,
-					"left": 690,
-					"width": 250,
-					"height": 20,
-					"fontSize": 18,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
 				"List Box3": {
 					"type": "listbox",
 					"left": 70,
-					"top": 270,
+					"top": 290,
 					"width": 885,
 					"height": 121,
 					"events": [
@@ -497,17 +470,18 @@
 						},
 						{
 							"header": {
-								"text": "Creation date",
+								"text": "Stamp",
 								"name": "Header14"
 							},
 							"name": "Column14",
 							"footer": {
 								"name": "Footer14"
 							},
-							"dataSource": "This:C1470.creationDate",
+							"dataSource": "This:C1470.stamp",
 							"enterable": false,
 							"dataSourceTypeHint": "date",
-							"textAlign": "center"
+							"textAlign": "center",
+							"width": 220
 						},
 						{
 							"header": {
@@ -520,14 +494,14 @@
 							},
 							"dataSource": "This:C1470.comment",
 							"enterable": false,
-							"width": 500
+							"width": 400
 						}
 					]
 				},
 				"Input2": {
 					"type": "input",
 					"left": 170,
-					"top": 240,
+					"top": 260,
 					"width": 80,
 					"height": 20,
 					"dataSource": "\"(\"+String:C10(Form:C1466.products.length)+\")\"",
@@ -542,7 +516,7 @@
 				"Text2": {
 					"type": "text",
 					"text": "Products list",
-					"top": 240,
+					"top": 260,
 					"left": 70,
 					"width": 140,
 					"height": 20,
@@ -553,7 +527,7 @@
 				"Text6": {
 					"type": "text",
 					"text": "Body 1:",
-					"top": 450,
+					"top": 470,
 					"left": 70,
 					"width": 80,
 					"height": 20,
@@ -567,9 +541,9 @@
 				"Input4": {
 					"type": "input",
 					"left": 70,
-					"top": 630,
+					"top": 650,
 					"width": 500,
-					"height": 140,
+					"height": 100,
 					"dataSource": "LinesCode{1}",
 					"enterable": false,
 					"focusable": false,
@@ -579,7 +553,7 @@
 				"Text7": {
 					"type": "text",
 					"text": "ProductsEntity class",
-					"top": 610,
+					"top": 630,
 					"left": 70,
 					"width": 180,
 					"height": 20,
@@ -590,7 +564,7 @@
 				"Button2": {
 					"type": "button",
 					"text": "Initialize products",
-					"top": 240,
+					"top": 260,
 					"left": 800,
 					"width": 150,
 					"height": 20,
@@ -605,7 +579,7 @@
 					"top": 80,
 					"left": 50,
 					"width": 1000,
-					"height": 140,
+					"height": 160,
 					"sizingY": "grow",
 					"dataSource": "Infos[2].Description",
 					"focusable": false,
@@ -623,8 +597,8 @@
 				},
 				"Button5": {
 					"type": "button",
-					"text": "Run URL",
-					"top": 590,
+					"text": "POST",
+					"top": 610,
 					"left": 570,
 					"width": 100,
 					"height": 20,
@@ -639,7 +613,7 @@
 				"Input16": {
 					"type": "input",
 					"left": 340,
-					"top": 480,
+					"top": 500,
 					"width": 330,
 					"height": 100,
 					"dataSource": "Form:C1466.body2",
@@ -649,7 +623,7 @@
 				"Text16": {
 					"type": "text",
 					"text": "Body 2:",
-					"top": 450,
+					"top": 470,
 					"left": 340,
 					"width": 80,
 					"height": 20,
@@ -659,889 +633,6 @@
 					"stroke": "#6495ed",
 					"sizingX": "fixed",
 					"sizingY": "fixed"
-				}
-			}
-		},
-		{
-			"objects": {
-				"information1": {
-					"type": "input",
-					"top": 80,
-					"left": 40,
-					"width": 1000,
-					"height": 140,
-					"sizingX": "move",
-					"sizingY": "grow",
-					"dataSource": "Infos[3].Description",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					],
-					"class": "description"
-				},
-				"PersonValue2": {
-					"type": "input",
-					"left": 140,
-					"top": 330,
-					"width": 400,
-					"height": 20,
-					"dataSource": "Form:C1466.people.firstname",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": []
-				},
-				"PersonValue1": {
-					"type": "input",
-					"left": 140,
-					"top": 260,
-					"width": 150,
-					"height": 20,
-					"dataSource": "Form:C1466.people.title",
-					"visibility": "visible",
-					"events": []
-				},
-				"PersonLabel1": {
-					"type": "text",
-					"text": "Title",
-					"top": 260,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonLabel2": {
-					"type": "text",
-					"text": "Firstname",
-					"top": 330,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonValue3": {
-					"type": "input",
-					"left": 140,
-					"top": 400,
-					"width": 400,
-					"height": 20,
-					"dataSource": "Form:C1466.people.lastname",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": []
-				},
-				"PersonLabel3": {
-					"type": "text",
-					"text": "Lastname",
-					"top": 400,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonValue4": {
-					"type": "input",
-					"left": 140,
-					"top": 470,
-					"width": 100,
-					"height": 20,
-					"dataSource": "Form:C1466.people.streetNumber",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": [],
-					"textAlign": "left"
-				},
-				"PersonLabel4": {
-					"type": "text",
-					"text": "Street number",
-					"top": 470,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonValue5": {
-					"type": "input",
-					"left": 140,
-					"top": 540,
-					"width": 400,
-					"height": 20,
-					"dataSource": "Form:C1466.people.street",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": []
-				},
-				"PersonLabel5": {
-					"type": "text",
-					"text": "Street",
-					"top": 540,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonValue6": {
-					"type": "input",
-					"left": 140,
-					"top": 680,
-					"width": 100,
-					"height": 20,
-					"dataSource": "Form:C1466.people.zipCode",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": []
-				},
-				"PersonLabel6": {
-					"type": "text",
-					"text": "Zip code",
-					"top": 680,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"PersonValue7": {
-					"type": "input",
-					"left": 140,
-					"top": 610,
-					"width": 400,
-					"height": 20,
-					"dataSource": "Form:C1466.people.city",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": []
-				},
-				"PersonLabel7": {
-					"type": "text",
-					"text": "City",
-					"top": 610,
-					"left": 10,
-					"width": 120,
-					"height": 20,
-					"textAlign": "right",
-					"visibility": "visible"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 260,
-					"left": 560,
-					"width": 500,
-					"height": 250,
-					"strokeDashArray": [
-						1,
-						7
-					],
-					"fill": "transparent"
-				},
-				"Text1": {
-					"type": "text",
-					"text": "MAIL LABEL",
-					"top": 220,
-					"left": 560,
-					"width": 500,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"fontSize": 22,
-					"textAlign": "center"
-				},
-				"PersonValue8": {
-					"type": "input",
-					"left": 700,
-					"top": 290,
-					"width": 300,
-					"height": 20,
-					"dataSource": "Form:C1466.people.mailLabel.line1",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": [
-						"onAfterKeystroke"
-					],
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"fontSize": 20,
-					"fontStyle": "italic",
-					"textAlign": "center"
-				},
-				"PersonValue9": {
-					"type": "input",
-					"left": 700,
-					"top": 360,
-					"width": 300,
-					"height": 20,
-					"dataSource": "Form:C1466.people.mailLabel.line2",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": [
-						"onAfterKeystroke"
-					],
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"fontSize": 18,
-					"fontStyle": "italic",
-					"textAlign": "center"
-				},
-				"PersonValue10": {
-					"type": "input",
-					"left": 700,
-					"top": 430,
-					"width": 300,
-					"height": 20,
-					"dataSource": "Form:C1466.people.mailLabel.line3",
-					"visibility": "visible",
-					"dataSourceTypeHint": "number",
-					"events": [
-						"onAfterKeystroke"
-					],
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"fontSize": 18,
-					"fontStyle": "italic",
-					"textAlign": "center",
-					"fontWeight": "bold"
-				},
-				"Text8": {
-					"type": "text",
-					"text": "A People entity",
-					"top": 220,
-					"left": 140,
-					"width": 250,
-					"height": 20,
-					"fontSize": 18,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
-				},
-				"Input5": {
-					"type": "input",
-					"left": 140,
-					"top": 290,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{3}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input8": {
-					"type": "input",
-					"left": 140,
-					"top": 360,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{4}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input9": {
-					"type": "input",
-					"left": 140,
-					"top": 430,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{5}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input10": {
-					"type": "input",
-					"left": 140,
-					"top": 500,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{6}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input11": {
-					"type": "input",
-					"left": 140,
-					"top": 570,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{7}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input12": {
-					"type": "input",
-					"left": 140,
-					"top": 710,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{8}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Input15": {
-					"type": "input",
-					"left": 140,
-					"top": 640,
-					"width": 320,
-					"height": 20,
-					"dataSource": "LinesCode{9}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Button3": {
-					"type": "button",
-					"text": "Open the PeopleEntity class",
-					"top": 220,
-					"left": 330,
-					"width": 220,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button3.4dm",
-					"focusable": false
-				},
-				"Static Picture1": {
-					"type": "picture",
-					"top": 518,
-					"left": 555,
-					"width": 496,
-					"height": 246,
-					"picture": "Images/Static Picture1.png",
-					"pictureFormat": "scaled"
-				},
-				"Text13": {
-					"type": "text",
-					"text": "Line 1:",
-					"top": 290,
-					"left": 570,
-					"width": 100,
-					"height": 20,
-					"textAlign": "right",
-					"fontSize": 18
-				},
-				"Text14": {
-					"type": "text",
-					"text": "Line 2:",
-					"top": 360,
-					"left": 570,
-					"width": 100,
-					"height": 20,
-					"textAlign": "right",
-					"fontSize": 18
-				},
-				"Text15": {
-					"type": "text",
-					"text": "Line 3:",
-					"top": 430,
-					"left": 570,
-					"width": 100,
-					"height": 20,
-					"textAlign": "right",
-					"fontSize": 18
-				}
-			},
-			"entryOrder": [
-				"Input15",
-				"PersonValue1",
-				"PersonValue2",
-				"PersonValue3",
-				"PersonValue4",
-				"PersonValue5",
-				"PersonValue7",
-				"PersonValue6"
-			]
-		},
-		{
-			"objects": {
-				"information3": {
-					"type": "input",
-					"top": 80,
-					"left": 40,
-					"width": 1000,
-					"height": 160,
-					"sizingY": "grow",
-					"dataSource": "Infos[4].Description",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					],
-					"class": "description"
-				},
-				"List Box1": {
-					"type": "listbox",
-					"left": 70,
-					"top": 270,
-					"width": 725,
-					"height": 61,
-					"events": [],
-					"listboxType": "collection",
-					"dataSource": "Form:C1466.orderLines",
-					"selectionMode": "single",
-					"headerHeight": "21px",
-					"rowHeight": "20px",
-					"focusable": true,
-					"scrollbarHorizontal": "hidden",
-					"singleClickEdit": false,
-					"currentItemSource": "Form:C1466.selected",
-					"metaSource": "setColor",
-					"columns": [
-						{
-							"header": {
-								"text": "Name",
-								"name": "Header5"
-							},
-							"name": "Column5",
-							"footer": {
-								"name": "Footer5"
-							},
-							"dataSource": "This:C1470.product.name",
-							"enterable": false,
-							"width": 150
-						},
-						{
-							"header": {
-								"text": "Quantity",
-								"name": "Header9"
-							},
-							"name": "Column9",
-							"footer": {
-								"name": "Footer9"
-							},
-							"dataSource": "This:C1470.quantity",
-							"enterable": true,
-							"width": 80,
-							"dataSourceTypeHint": "number",
-							"textAlign": "center",
-							"resizable": false,
-							"events": [],
-							"requiredList": {
-								"$ref": "/SOURCES/lists.json#/Quantities"
-							}
-						},
-						{
-							"header": {
-								"text": "Wrap separately",
-								"name": "Header6"
-							},
-							"name": "Column6",
-							"footer": {
-								"name": "Footer6"
-							},
-							"dataSource": "This:C1470.wrapSeparately",
-							"enterable": true,
-							"width": 100,
-							"dataSourceTypeHint": "boolean",
-							"textAlign": "center",
-							"resizable": false,
-							"events": []
-						},
-						{
-							"header": {
-								"text": "Comment",
-								"name": "Header8"
-							},
-							"name": "Column8",
-							"footer": {
-								"name": "Footer8"
-							},
-							"dataSource": "This:C1470.info",
-							"enterable": false,
-							"width": 380
-						}
-					]
-				},
-				"Text4": {
-					"type": "text",
-					"text": "ORDER # 1 - Order lines",
-					"top": 250,
-					"left": 70,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"fontSize": 14
-				},
-				"List Box2": {
-					"type": "listbox",
-					"left": 70,
-					"top": 370,
-					"width": 545,
-					"height": 61,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
-					"listboxType": "collection",
-					"dataSource": "Form:C1466.products",
-					"selectionMode": "none",
-					"headerHeight": "21px",
-					"rowHeight": "20px",
-					"focusable": false,
-					"scrollbarHorizontal": "hidden",
-					"columns": [
-						{
-							"header": {
-								"text": "Name",
-								"name": "Header10"
-							},
-							"name": "Column10",
-							"footer": {
-								"name": "Footer10"
-							},
-							"dataSource": "This:C1470.name",
-							"width": 150,
-							"enterable": false
-						},
-						{
-							"header": {
-								"text": "Quantity in stock",
-								"name": "Header11"
-							},
-							"name": "Column11",
-							"footer": {
-								"name": "Footer11"
-							},
-							"dataSource": "This:C1470.inStock",
-							"width": 100,
-							"enterable": false,
-							"textAlign": "center"
-						},
-						{
-							"header": {
-								"text": "Allow separately wrap if even quantity",
-								"name": "Header7"
-							},
-							"name": "Column7",
-							"footer": {
-								"name": "Footer7"
-							},
-							"dataSource": "This:C1470.allowWrapSeparately",
-							"width": 280,
-							"dataSourceTypeHint": "boolean",
-							"enterable": false,
-							"textAlign": "center"
-						}
-					]
-				},
-				"Text5": {
-					"type": "text",
-					"text": "PRODUCTS - Cheat sheet",
-					"top": 350,
-					"left": 70,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"fontSize": 14
-				},
-				"Input17": {
-					"type": "input",
-					"left": 70,
-					"top": 470,
-					"width": 860,
-					"height": 300,
-					"dataSource": "LinesCode{11}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Text9": {
-					"type": "text",
-					"text": "OrderLineEntity class",
-					"top": 450,
-					"left": 70,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"sizingX": "fixed",
-					"sizingY": "fixed",
-					"fontSize": 14
-				}
-			}
-		},
-		{
-			"objects": {
-				"information4": {
-					"type": "input",
-					"top": 80,
-					"left": 40,
-					"width": 1000,
-					"height": 150,
-					"sizingY": "grow",
-					"dataSource": "Infos[5].Description",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					],
-					"class": "description"
-				},
-				"List Box4": {
-					"type": "listbox",
-					"left": 70,
-					"top": 280,
-					"width": 365,
-					"height": 61,
-					"events": [],
-					"listboxType": "collection",
-					"dataSource": "Form:C1466.products",
-					"selectionMode": "single",
-					"headerHeight": "21px",
-					"rowHeight": "20px",
-					"focusable": true,
-					"scrollbarHorizontal": "hidden",
-					"singleClickEdit": false,
-					"currentItemSource": "",
-					"columns": [
-						{
-							"header": {
-								"text": "ID",
-								"name": "Header26"
-							},
-							"name": "Column26",
-							"footer": {
-								"name": "Footer26"
-							},
-							"dataSource": "This:C1470.ID",
-							"enterable": false,
-							"width": 100,
-							"textAlign": "center"
-						},
-						{
-							"header": {
-								"text": "Product",
-								"name": "Header16"
-							},
-							"name": "Column16",
-							"footer": {
-								"name": "Footer16"
-							},
-							"dataSource": "This:C1470.name",
-							"enterable": true,
-							"width": 150,
-							"resizable": false
-						},
-						{
-							"header": {
-								"text": "Price",
-								"name": "Header17"
-							},
-							"name": "Column17",
-							"footer": {
-								"name": "Footer17"
-							},
-							"dataSource": "This:C1470.price",
-							"enterable": true,
-							"width": 100,
-							"dataSourceTypeHint": "number",
-							"textAlign": "center",
-							"resizable": false,
-							"events": []
-						}
-					]
-				},
-				"Text10": {
-					"type": "text",
-					"text": "Products list",
-					"top": 260,
-					"left": 70,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"fontSize": 14
-				},
-				"Input18": {
-					"type": "input",
-					"left": 70,
-					"top": 450,
-					"width": 860,
-					"height": 320,
-					"dataSource": "LinesCode{12}",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"styledText": true
-				},
-				"Text12": {
-					"type": "text",
-					"text": "ProductsEntity class",
-					"top": 430,
-					"left": 70,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"sizingX": "fixed",
-					"sizingY": "fixed",
-					"fontSize": 14
-				},
-				"List Box5": {
-					"type": "listbox",
-					"left": 460,
-					"top": 280,
-					"width": 595,
-					"height": 141,
-					"events": [],
-					"listboxType": "collection",
-					"dataSource": "Storage:C1525.logs",
-					"selectionMode": "none",
-					"headerHeight": "21px",
-					"rowHeight": "20px",
-					"focusable": false,
-					"scrollbarHorizontal": "hidden",
-					"singleClickEdit": false,
-					"currentItemSource": "",
-					"columns": [
-						{
-							"header": {
-								"text": "Dataclass",
-								"name": "Header20"
-							},
-							"name": "Column20",
-							"footer": {
-								"name": "Footer20"
-							},
-							"dataSource": "This:C1470.dataclass",
-							"enterable": false,
-							"width": 120,
-							"resizable": false
-						},
-						{
-							"header": {
-								"text": "Attribute",
-								"name": "Header25"
-							},
-							"name": "Column25",
-							"footer": {
-								"name": "Footer25"
-							},
-							"dataSource": "This:C1470.attribute",
-							"enterable": false,
-							"width": 120,
-							"dataSourceTypeHint": "text",
-							"textAlign": "center",
-							"resizable": false,
-							"events": []
-						},
-						{
-							"header": {
-								"text": "Entity ID",
-								"name": "Header21"
-							},
-							"name": "Column21",
-							"footer": {
-								"name": "Footer21"
-							},
-							"dataSource": "This:C1470.entityID",
-							"enterable": false,
-							"width": 80,
-							"dataSourceTypeHint": "text",
-							"textAlign": "center",
-							"resizable": false,
-							"events": []
-						},
-						{
-							"header": {
-								"text": "Updated by",
-								"name": "Header22"
-							},
-							"name": "Column22",
-							"footer": {
-								"name": "Footer22"
-							},
-							"dataSource": "This:C1470.updatedBy",
-							"enterable": false,
-							"width": 100,
-							"dataSourceTypeHint": "text",
-							"textAlign": "center",
-							"resizable": false,
-							"events": []
-						},
-						{
-							"header": {
-								"text": "When",
-								"name": "Header24"
-							},
-							"name": "Column24",
-							"footer": {
-								"name": "Footer24"
-							},
-							"dataSource": "This:C1470.when+\" at \"+This:C1470.at",
-							"enterable": false,
-							"width": 160,
-							"resizable": false
-						}
-					]
-				},
-				"Text11": {
-					"type": "text",
-					"text": "Logs - Updated attributes",
-					"top": 260,
-					"left": 460,
-					"width": 180,
-					"height": 20,
-					"fontWeight": "bold",
-					"stroke": "#6495ed",
-					"fontSize": 14
-				},
-				"Button4": {
-					"type": "button",
-					"text": "Clear logs",
-					"top": 250,
-					"left": 930,
-					"width": 120,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button4.4dm",
-					"focusable": false
 				}
 			}
 		},
@@ -1580,5 +671,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 3150
+	"geometryStamp": 3167
 }

@@ -1,14 +1,12 @@
 
 
-var $requestObj : Object
-var $request : Object
-
 If (btnTrace)
 	TRACE:C157
 End if 
 
 var $headers : Object:={Cookie: ""}
-var $requestObj; $request : Object
+var $requestObj : Object
+var $request : 4D:C1709.HTTPRequest
 
 var $start; $end : Integer
 var $cookies : Collection
@@ -29,12 +27,12 @@ If (Form:C1466.authentified=False:C215)
 			
 			If (Value type:C1509($request.response.headers["set-cookie"])=Is collection:K8:32)
 				$cookies:=$request.response.headers["set-cookie"]
-				$cookie:=$cookies.find(Formula:C1597((Position:C15("4DSID_HDI_ORDA_Events_Part_1"; $1.value)#0)))
+				$cookie:=$cookies.find(Formula:C1597((Position:C15("4DSID_HDI_ORDA_constructor"; $1.value)#0)))
 			Else 
 				$cookie:=$request.response.headers["set-cookie"]
 			End if 
 			
-			$start:=Position:C15("4DSID_HDI_ORDA_Events_Part_1"; $cookie)
+			$start:=Position:C15("4DSID_HDI_ORDA_constructor"; $cookie)
 			$end:=Position:C15(";"; $cookie; $start)
 			
 			Use (Storage:C1525.session)

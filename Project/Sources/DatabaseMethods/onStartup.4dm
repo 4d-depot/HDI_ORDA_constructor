@@ -8,6 +8,4 @@ End use
 
 ds:C1482.Products.initProducts()
 
-clearLogs
-
 
