@@ -28,7 +28,7 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="get started with dynamic ORDA events"
+		$options.title:="get started with the ORDA entity constructor"
 		
 		$options.blog:="blog.4d.com"
 		$options.info:="ORDA"  //ex : "4D View Pro feature"
