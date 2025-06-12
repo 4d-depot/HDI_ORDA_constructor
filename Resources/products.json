@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Yellow Pack",
+    "price": 100,
+    "creationDate": "2025-05-01T00:00:00.000Z",
+    "comment": "Demo product #1",
+    "inStock": 3,
+    "allowWrapSeparately": true
+  },
+  {
+    "name": "Blue Pack",
+    "price": 200,
+    "creationDate": "2025-05-10T00:00:00.000Z",
+    "comment": "Demo product #2",
+    "inStock": 2,
+    "allowWrapSeparately": false
+  }
+]
