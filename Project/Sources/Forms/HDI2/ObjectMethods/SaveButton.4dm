@@ -1,5 +1,10 @@
 
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
+
 Form:C1466.status:=Form:C1466.product.save()
 
 Form:C1466.products.add(Form:C1466.product)

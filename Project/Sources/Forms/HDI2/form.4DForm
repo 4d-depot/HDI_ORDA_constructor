@@ -358,6 +358,19 @@
 					"focusable": false,
 					"fill": "transparent",
 					"styledText": true
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 750,
+					"left": 1000,
+					"width": 70,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace",
+					"fontSize": 14
 				}
 			}
 		},
@@ -633,6 +646,19 @@
 					"stroke": "#6495ed",
 					"sizingX": "fixed",
 					"sizingY": "fixed"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 750,
+					"left": 1000,
+					"width": 70,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace",
+					"fontSize": 14
 				}
 			}
 		}
@@ -648,5 +674,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 3168
+	"geometryStamp": 3170
 }
