@@ -1,4 +1,4 @@
-# HDI_Template_20
+# HDI ORDA constructor
 
 The ORDA entity constructor (4D 20 R10)
 

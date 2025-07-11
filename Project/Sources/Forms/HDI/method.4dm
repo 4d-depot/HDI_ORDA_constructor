@@ -1,6 +1,5 @@
-C_TEXT:C284($version; $maintext; $subtext)
-C_TEXT:C284($r)
-C_TEXT:C284($format)
+var $version; $maintext; $subtext; $r; $format : Text
+var $width; $height; $shift : Integer
 
 Case of 
 		
@@ -34,7 +33,8 @@ Case of
 			
 			$version:="4D "+Substring:C12(Form:C1466.minimumVersion; 1; 2)
 			If (Length:C16(Form:C1466.minimumVersion)>2)
-				$r:=Substring:C12(Form:C1466.minimumVersion; 3; 2)
+				$r:=String:C10(Formula from string:C1601("0x"+Substring:C12(Form:C1466.minimumVersion; 3; 1)).call())
+				
 				If ($r#"0")
 					$version:=$version+" R"+$r
 					

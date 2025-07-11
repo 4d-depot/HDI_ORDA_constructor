@@ -2,11 +2,7 @@ Class extends DataClass
 
 
 
-exposed Function createNew() : cs:C1710.ProductsEntity
-	
-	return This:C1470.new()
-	
-	
+
 exposed Function initProducts() : cs:C1710.ProductsSelection
 	
 	var $productsFile : 4D:C1709.File

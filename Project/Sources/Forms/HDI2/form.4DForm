@@ -76,7 +76,7 @@
 					"left": 50,
 					"width": 1000,
 					"height": 140,
-					"sizingY": "grow",
+					"sizingY": "fixed",
 					"dataSource": "Infos[1].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -110,6 +110,7 @@
 					"rowHeight": "20px",
 					"focusable": false,
 					"scrollbarHorizontal": "hidden",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -180,7 +181,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"NewProductValue2": {
 					"type": "input",
@@ -192,7 +194,8 @@
 					"enterable": false,
 					"fill": "#F0F0F5",
 					"dataSourceTypeHint": "date",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"NewProductValue3": {
 					"type": "input",
@@ -206,7 +209,8 @@
 					"events": [
 						"onAfterKeystroke"
 					],
-					"method": "ObjectMethods/NewProductValue3.4dm"
+					"method": "ObjectMethods/NewProductValue3.4dm",
+					"sizingY": "fixed"
 				},
 				"NewProductValue4": {
 					"type": "input",
@@ -217,7 +221,8 @@
 					"dataSource": "Form:C1466.product.comment",
 					"enterable": false,
 					"fill": "#F0F0F5",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"SaveButton": {
 					"type": "button",
@@ -230,7 +235,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/SaveButton.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"NewProductValue1": {
 					"type": "input",
@@ -243,7 +249,8 @@
 					"events": [
 						"onAfterKeystroke"
 					],
-					"method": "ObjectMethods/NewProductValue1.4dm"
+					"method": "ObjectMethods/NewProductValue1.4dm",
+					"sizingY": "fixed"
 				},
 				"NewProductLabel1": {
 					"type": "text",
@@ -253,7 +260,8 @@
 					"width": 150,
 					"height": 20,
 					"textAlign": "right",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"NewProductLabel2": {
 					"type": "text",
@@ -263,7 +271,8 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"NewProductLabel3": {
 					"type": "text",
@@ -273,7 +282,8 @@
 					"width": 150,
 					"height": 20,
 					"textAlign": "right",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"NewProductLabel4": {
 					"type": "text",
@@ -283,7 +293,8 @@
 					"width": 100,
 					"height": 20,
 					"textAlign": "right",
-					"visibility": "hidden"
+					"visibility": "hidden",
+					"sizingY": "fixed"
 				},
 				"Button1": {
 					"type": "button",
@@ -296,7 +307,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button1.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"Text": {
 					"type": "text",
@@ -307,7 +319,8 @@
 					"height": 20,
 					"fontWeight": "bold",
 					"fontSize": 16,
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingY": "fixed"
 				},
 				"Input": {
 					"type": "input",
@@ -322,7 +335,8 @@
 					"fontWeight": "bold",
 					"borderStyle": "none",
 					"stroke": "#6495ed",
-					"fontSize": 16
+					"fontSize": 16,
+					"sizingY": "fixed"
 				},
 				"Input13": {
 					"type": "input",
@@ -334,7 +348,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "fixed"
 				},
 				"Text3": {
 					"type": "text",
@@ -345,7 +360,8 @@
 					"height": 20,
 					"fontWeight": "bold",
 					"stroke": "#6495ed",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingY": "fixed"
 				},
 				"Input3": {
 					"type": "input",
@@ -357,7 +373,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "fixed"
 				},
 				"Check Box3": {
 					"type": "checkbox",
@@ -370,7 +387,8 @@
 						"onClick"
 					],
 					"dataSource": "btnTrace",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingY": "fixed"
 				}
 			}
 		},
@@ -431,7 +449,8 @@
 					"height": 70,
 					"dataSource": "Form:C1466.body1",
 					"dataSourceTypeHint": "object",
-					"enterable": true
+					"enterable": true,
+					"sizingY": "fixed"
 				},
 				"List Box3": {
 					"type": "listbox",
@@ -452,6 +471,7 @@
 					"rowHeight": "20px",
 					"focusable": false,
 					"scrollbarHorizontal": "hidden",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -524,7 +544,8 @@
 					"fontWeight": "bold",
 					"borderStyle": "none",
 					"stroke": "#6495ed",
-					"fontSize": 16
+					"fontSize": 16,
+					"sizingY": "fixed"
 				},
 				"Text2": {
 					"type": "text",
@@ -535,7 +556,8 @@
 					"height": 20,
 					"fontWeight": "bold",
 					"fontSize": 16,
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingY": "fixed"
 				},
 				"Text6": {
 					"type": "text",
@@ -561,7 +583,8 @@
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
-					"styledText": true
+					"styledText": true,
+					"sizingY": "fixed"
 				},
 				"Text7": {
 					"type": "text",
@@ -572,7 +595,8 @@
 					"height": 20,
 					"fontWeight": "bold",
 					"stroke": "#6495ed",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingY": "fixed"
 				},
 				"Button2": {
 					"type": "button",
@@ -585,7 +609,8 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button2.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingY": "fixed"
 				},
 				"information5": {
 					"type": "input",
@@ -593,7 +618,7 @@
 					"left": 50,
 					"width": 1000,
 					"height": 160,
-					"sizingY": "grow",
+					"sizingY": "fixed",
 					"dataSource": "Infos[2].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -631,7 +656,8 @@
 					"height": 100,
 					"dataSource": "Form:C1466.body2",
 					"dataSourceTypeHint": "object",
-					"enterable": true
+					"enterable": true,
+					"sizingY": "fixed"
 				},
 				"Text16": {
 					"type": "text",
@@ -658,7 +684,8 @@
 						"onClick"
 					],
 					"dataSource": "btnTrace",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingY": "fixed"
 				}
 			}
 		}
@@ -674,5 +701,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 3170
+	"geometryStamp": 3205
 }
